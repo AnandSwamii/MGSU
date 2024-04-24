@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .header{
     display: flex;
@@ -43,40 +44,48 @@ ul
     background-color: rgb(233, 141, 21);
 }
 .bgimg{
-    background-image: url(./image/bgimg.png);
-    background-size: 100%;
+    background-image: linear-gradient(rgb(0 0 0 / 47%),rgb(0 0 0 / 47%)),url(./image/bgimg.png);
+    background-size: cover;
+    width: 100%;
     height: 100vh;
-    background-repeat: no-repeat; }
+    /* flex-direction: column; */
+    background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center; 
+flex-direction: column;
+gap: 220px;
+}
+    
+
 .clg{
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
  gap: 2vw;
- padding: 100px 0 0 0;
+ padding: 10px;
+ width: 700px;
+ background-color: aqua;
+ line-height: 40px;
+ text-align: center;
+ box-shadow: 5px 5px 10px black;
+ border-radius: 10px;
  }
  .clg h1{
-    font-size: 45px;
     color: blue;
-    font-weight: 900;
  }
- .clg p{
-    font-size: 25px;
-    font-weight: 600;
- }
- .button2{
-    background-color: blueviolet;
+  .button2{
+    background-color: #0ff;
     border-radius: 20px;
     text-decoration: none;
     padding:  5px 40px;
-    margin-top: 260px;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    /* right: 575px; */
     transition: 1s;
 }
 .button2:hover{
     background-color: yellow;
 }
 .button2 a {
-    color: #000;
+    color: #00f;
     font-size: 35px;
     text-decoration: none;
     font-weight: 400;
@@ -99,14 +108,14 @@ margin-bottom: 30px;
     align-items: center;
 }
 .box{
-    height: 300px;
-    background-color: blueviolet;
+    /* height: 300px; */
+    /* background-color: blueviolet; */
     width: 50%;
     padding: 40px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px black;
-    border: 2px solid #000;
+    /* box-shadow: 5px 5px 10px black; */
+    border: 2px solid rgb(230, 223, 223);
 }
 .box p{
     font-size: 25px;
@@ -122,7 +131,7 @@ margin-bottom: 30px;
 .manoj img{
     border-radius: 5px;
     border: 2px solid #000;
-    height: 300px;
+    height: 420px;
 }
 .gal{
     height: 320px;
@@ -134,6 +143,9 @@ margin-bottom: 30px;
     border-radius: 10px;
     width: 100%;
     height: 100%;
+}
+#mygallry{
+    
 }
 .parent{
     margin: 90px 0px 30px 98px;
@@ -149,9 +161,9 @@ margin-bottom: 30px;
     margin-bottom: 80px;
 }
 .under{
-    height: 480px;
-    width: 400px;
-    background-color: rgb(26, 247, 6);
+    height: 80vh;
+    width: 30vw;
+    background-color: rgb(223, 233, 222);
     box-shadow: 5px 5px 10px gainsboro;
     border-radius: 10px;
     
@@ -175,7 +187,7 @@ margin-bottom: 30px;
 .post{
     height: 480px;
     width: 400px;
-    background-color: yellow;
+    background-color: rgb(241, 241, 236);
     box-shadow: 5px 5px 10px gainsboro;
     border-radius: 10px;
     
@@ -200,7 +212,7 @@ margin-bottom: 30px;
 .add{
     height: 480px;
     width: 400px;
-    background-color: #f0f;
+    background-color: rgb(247, 243, 247);
     box-shadow: 5px 5px 10px gainsboro;
     border-radius: 10px ;
     
@@ -317,4 +329,52 @@ font-size: 13px;
     font-size: 12px;
     margin-top: 6px;
 }
+.myall
+{
+    grid:40px ;
+    display: flex;
+    background-color: rgb(14, 97, 97);
+    padding: 20px 0;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+.formContact
+{
+    border: 2px solid black;
+    width: 450px;
+    padding: 20px;
+}
+.contactUs2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #fadde1;
+}
+.conc1 {
+    margin-bottom: 15px;
+}
 
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color:#b30738;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
